@@ -1,0 +1,25 @@
+{
+  "/": {
+    "type": "directory",
+    "children": {
+      "readme.txt": "/readme.txt",
+      "config.json": "/config.json",
+      "script.sh": "/script.sh"
+    }
+  },
+  "/readme.txt": {
+    "type": "file",
+    "content": "This is a test VFS with multiple files.\nEach file demonstrates different content types.",
+    "encoding": "text"
+  },
+  "/config.json": {
+    "type": "file",
+    "content": "{\n  \"name\": \"test-vfs\",\n  \"version\": \"1.0\",\n  \"description\": \"Test configuration file\"\n}",
+    "encoding": "text"
+  },
+  "/script.sh": {
+    "type": "file",
+    "content": "#!/bin/bash\necho \"Hello from VFS script!\"\nls -la\npwd",
+    "encoding": "text"
+  }
+}

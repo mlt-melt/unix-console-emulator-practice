@@ -1,0 +1,13 @@
+{
+  "/": {
+    "type": "directory",
+    "children": {
+      "hello.txt": "/hello.txt"
+    }
+  },
+  "/hello.txt": {
+    "type": "file",
+    "content": "Hello, VFS World!",
+    "encoding": "text"
+  }
+}

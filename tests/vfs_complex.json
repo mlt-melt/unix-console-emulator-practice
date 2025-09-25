@@ -1,0 +1,157 @@
+{
+  "/": {
+    "type": "directory",
+    "children": {
+      "home": "/home",
+      "usr": "/usr",
+      "etc": "/etc",
+      "root.txt": "/root.txt"
+    }
+  },
+  "/home": {
+    "type": "directory",
+    "children": {
+      "user": "/home/user"
+    }
+  },
+  "/home/user": {
+    "type": "directory",
+    "children": {
+      "documents": "/home/user/documents",
+      "profile.txt": "/home/user/profile.txt"
+    }
+  },
+  "/home/user/documents": {
+    "type": "directory",
+    "children": {
+      "work": "/home/user/documents/work",
+      "personal": "/home/user/documents/personal",
+      "readme.md": "/home/user/documents/readme.md"
+    }
+  },
+  "/home/user/documents/work": {
+    "type": "directory",
+    "children": {
+      "project1": "/home/user/documents/work/project1",
+      "notes.txt": "/home/user/documents/work/notes.txt"
+    }
+  },
+  "/home/user/documents/work/project1": {
+    "type": "directory",
+    "children": {
+      "main.py": "/home/user/documents/work/project1/main.py",
+      "data.json": "/home/user/documents/work/project1/data.json"
+    }
+  },
+  "/home/user/documents/personal": {
+    "type": "directory",
+    "children": {
+      "diary.txt": "/home/user/documents/personal/diary.txt",
+      "photos": "/home/user/documents/personal/photos"
+    }
+  },
+  "/home/user/documents/personal/photos": {
+    "type": "directory",
+    "children": {
+      "vacation.jpg": "/home/user/documents/personal/photos/vacation.jpg"
+    }
+  },
+  "/usr": {
+    "type": "directory",
+    "children": {
+      "bin": "/usr/bin",
+      "lib": "/usr/lib"
+    }
+  },
+  "/usr/bin": {
+    "type": "directory",
+    "children": {
+      "python": "/usr/bin/python",
+      "bash": "/usr/bin/bash"
+    }
+  },
+  "/usr/lib": {
+    "type": "directory",
+    "children": {
+      "libtest.so": "/usr/lib/libtest.so"
+    }
+  },
+  "/etc": {
+    "type": "directory",
+    "children": {
+      "config": "/etc/config",
+      "hosts": "/etc/hosts"
+    }
+  },
+  "/etc/config": {
+    "type": "directory",
+    "children": {
+      "app.conf": "/etc/config/app.conf"
+    }
+  },
+  "/root.txt": {
+    "type": "file",
+    "content": "Root level file",
+    "encoding": "text"
+  },
+  "/home/user/profile.txt": {
+    "type": "file",
+    "content": "User Profile:\nName: Test User\nHome: /home/user",
+    "encoding": "text"
+  },
+  "/home/user/documents/readme.md": {
+    "type": "file",
+    "content": "# Documents Directory\n\nThis directory contains:\n- Work files\n- Personal files",
+    "encoding": "text"
+  },
+  "/home/user/documents/work/notes.txt": {
+    "type": "file",
+    "content": "Work Notes:\n1. Complete project1\n2. Review code\n3. Update documentation",
+    "encoding": "text"
+  },
+  "/home/user/documents/work/project1/main.py": {
+    "type": "file",
+    "content": "#!/usr/bin/env python3\nprint(\"Hello from VFS Python project!\")\n\ndef main():\n    print(\"This is a test file in VFS\")\n\nif __name__ == \"__main__\":\n    main()",
+    "encoding": "text"
+  },
+  "/home/user/documents/work/project1/data.json": {
+    "type": "file",
+    "content": "{\n  \"project\": \"VFS Test\",\n  \"files\": [\"main.py\", \"data.json\"],\n  \"status\": \"active\"\n}",
+    "encoding": "text"
+  },
+  "/home/user/documents/personal/diary.txt": {
+    "type": "file",
+    "content": "Dear Diary,\nToday I learned about Virtual File Systems.\nIt's quite interesting how we can store files in memory!",
+    "encoding": "text"
+  },
+  "/home/user/documents/personal/photos/vacation.jpg": {
+    "type": "file",
+    "content": "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==",
+    "encoding": "base64"
+  },
+  "/usr/bin/python": {
+    "type": "file",
+    "content": "#!/bin/bash\necho \"Python interpreter (simulated)\"",
+    "encoding": "text"
+  },
+  "/usr/bin/bash": {
+    "type": "file",
+    "content": "#!/bin/bash\necho \"Bash shell (simulated)\"",
+    "encoding": "text"
+  },
+  "/usr/lib/libtest.so": {
+    "type": "file",
+    "content": "RUxGAAACAAABAAAAAAAAAAAAAAAA",
+    "encoding": "base64"
+  },
+  "/etc/hosts": {
+    "type": "file",
+    "content": "127.0.0.1 localhost\n::1 localhost",
+    "encoding": "text"
+  },
+  "/etc/config/app.conf": {
+    "type": "file",
+    "content": "# Application Configuration\nport=8080\nhost=localhost\ndebug=true",
+    "encoding": "text"
+  }
+}

@@ -11,12 +11,7 @@ echo ----------------------------------------
 python main.py --script tests\startup_basic.sh
 
 echo.
-echo Test 2: Demo mode
-echo ----------------------------------------  
-python main.py --demo
-
-echo.
-echo Test 3: Help
+echo Test 2: Help
 echo ----------------------------------------
 python main.py --help
 

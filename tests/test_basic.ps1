@@ -13,8 +13,5 @@ python main.py --script "tests\startup_basic.sh"
 Write-Host "`nTest 2: VFS + script" -ForegroundColor Yellow  
 python main.py --vfs "./my_vfs" --script "tests\startup_basic.sh"
 
-Write-Host "`nTest 3: Demo mode" -ForegroundColor Yellow
-python main.py --demo
-
 Write-Host "`nAll tests completed!" -ForegroundColor Green
 Read-Host "Press Enter to exit"
